@@ -26,7 +26,9 @@ namespace casements
     // Construct an error exception with the given error_code.
     explicit error(error_code_type error_code);
 
-    // Construct an error exception with the given error_code, explaining the failing action.
+    // Construct an error exception with the given error_code. The message
+    // explains "Failed to <action>. <system-error-message>. (Win32 error
+    // <error_code>)".
     error(error_code_type error_code, const std::string& action);
 
     // Get the error_code.
