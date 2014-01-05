@@ -29,7 +29,7 @@
 			<Tool
 				Name="VCCustomBuildTool"
 				Description="Auto run test"
-				CommandLine="&quot;$(TargetDir)\$(TargetName).exe&quot; --report_level=no &amp;&amp; TYPE NUL&gt;$(TargetDir)\test_passed"
+				CommandLine="&quot;$(TargetDir)\$(TargetName).exe&quot; --report_level=no &amp;&amp; TYPE NUL&gt;$(TargetDir)\test_passed&#x0D;&#x0A;"
 				AdditionalDependencies="$(TargetPath)"
 				Outputs="$(TargetDir)\test_passed"
 			/>
@@ -45,7 +45,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="include;..\..\boost\include\boost-1_54"
+				AdditionalIncludeDirectories="include;..\..\boost\include\boost-1_54;..\windows\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;noexcept=throw()"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -91,7 +91,6 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 		</Configuration>
@@ -109,7 +108,7 @@
 			<Tool
 				Name="VCCustomBuildTool"
 				Description="Auto run test"
-				CommandLine="&quot;$(TargetDir)\$(TargetName).exe&quot; --report_level=no &amp;&amp; TYPE NUL&gt;$(TargetDir)\test_passed"
+				CommandLine="&quot;$(TargetDir)\$(TargetName).exe&quot; --report_level=no &amp;&amp; TYPE NUL&gt;$(TargetDir)\test_passed&#x0D;&#x0A;"
 				AdditionalDependencies="$(TargetPath)"
 				Outputs="$(TargetDir)\test_passed"
 			/>
@@ -126,7 +125,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="include;..\..\boost\include\boost-1_54"
+				AdditionalIncludeDirectories="include;..\..\boost\include\boost-1_54;..\windows\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;noexcept=throw()"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -173,7 +172,6 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 		</Configuration>
@@ -199,11 +197,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\test\file_version_info_test.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\test\format_message_from_system_test.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\test\last_error_test.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\test\version_type_test.cpp"
 				>
 			</File>
 		</Filter>
@@ -212,12 +218,20 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\resource.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\casements_test.rc"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

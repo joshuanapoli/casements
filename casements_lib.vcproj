@@ -155,11 +155,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\file_version_info.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\src\format_message_from_system.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\src\last_error.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\version_type.cpp"
 				>
 			</File>
 		</Filter>
@@ -177,11 +185,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\include\casements\file_version_info.hpp"
+				>
+			</File>
+			<File
 				RelativePath=".\include\casements\format_message_from_system.hpp"
 				>
 			</File>
 			<File
 				RelativePath=".\include\casements\last_error.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\casements\version_type.hpp"
 				>
 			</File>
 		</Filter>
