@@ -15,7 +15,7 @@
 BOOST_AUTO_TEST_CASE(should_get_system_message_for_known_error_code)
 {
   BOOST_CHECK_EQUAL
-    ( casements::format_message_from_system(ERROR_INVALID_FUNCTION)
+    ( casements::format_message_from_system(1)
     , "Incorrect function. (Win32 error 1)"
     );
 }

@@ -12,12 +12,12 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
+#include <boost/cstdint.hpp>
 #include <string>
-#include <Windows.h>
 
 namespace casements
 {
-  std::string format_message_from_system(DWORD hresult);
+  std::string format_message_from_system(boost::uint32_t hresult);
 }
 
 #endif

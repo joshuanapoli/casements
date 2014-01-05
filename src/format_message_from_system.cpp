@@ -15,18 +15,19 @@
 #include <casements/check.hpp>
 #include <casements/format_message_from_system.hpp>
 #include <cassert>
+#include <Windows.h>
 
 namespace casements
 {
   namespace
   {
-    std::string generic_message(DWORD result)
+    std::string generic_message(boost::uint32_t result)
     {
       return "Win32 error " + boost::lexical_cast<std::string>(result);
     }
   }
 
-  std::string format_message_from_system(DWORD result)
+  std::string format_message_from_system(boost::uint32_t result)
   {
     LPTSTR buffer = NULL;
     BOOST_SCOPE_EXIT(&buffer)

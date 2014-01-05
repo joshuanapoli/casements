@@ -12,6 +12,7 @@
 #include <casements/check.hpp>
 #include <casements/file_version_info.hpp>
 #include <casements/version_type.hpp>
+#include <Windows.h>
 
 namespace casements
 {

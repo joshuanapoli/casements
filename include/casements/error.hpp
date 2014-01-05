@@ -11,9 +11,11 @@
 // Distributed under the Boost Software License, Version 1.0.
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
+
+#include <boost/cstdint.hpp>
 #include <iostream>
+#include <stdexcept>
 #include <string>
-#include <Windows.h>
 
 namespace casements
 {
@@ -21,7 +23,7 @@ namespace casements
   class error : public std::runtime_error
   {
   public:
-    typedef DWORD error_code_type;
+    typedef boost::uint32_t error_code_type;
 
     // Construct an error exception with the given error_code.
     explicit error(error_code_type error_code);
