@@ -1,7 +1,7 @@
 Casements
 =========
 
-The casements library provides adapts a few bits of the Win32 API for C++. The
+The casements library adapts a few bits of the Win32 API for C++. The
 Casements interface avoids the need to include the troublesome Windows.h header
 in application code. The application should add [casements/include](include) to
 its list of include paths. Source files are under the [casements/src](src)
@@ -51,6 +51,16 @@ The `casements::file_version_info` class provides easy access to version
 resource information. This is useful to avoid repeating version strings within
 the application source code. The application should read its own version
 resource to format the text of the "about" box.
+
+
+Modules
+-------
+
+A "module" is an executable or dynamic link library. Modules are abstracted by
+`casements::module_type`. This class has helper methods to read a module's
+version resource using the 'version', 'company_name' and 'product_name' member
+functions. The Win32 module handle can be retrieved using the 'handle' member
+function. The returned class is convertable to a Win32 `HMODULE`.
 
 
 License

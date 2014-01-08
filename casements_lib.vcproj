@@ -167,6 +167,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\module_handle.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\module_type.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\src\version_type.cpp"
 				>
 			</File>
@@ -194,6 +202,14 @@
 			</File>
 			<File
 				RelativePath=".\include\casements\last_error.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\casements\module_handle.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\casements\module_type.hpp"
 				>
 			</File>
 			<File
