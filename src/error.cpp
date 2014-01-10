@@ -20,19 +20,19 @@ namespace casements
   {
   }
 
-  error::error(error_code_type error_code, const std::string& action) noexcept
+  error::error(error_code_type error_code, const std::string& action) BOOST_NOEXCEPT
     : std::runtime_error("Failed to " + action + ". " + format_message_from_system(error_code))
     , error_code_(error_code)
     , action_(action)
   {
   }
 
-  error::error_code_type error::get_error_code() const noexcept
+  error::error_code_type error::get_error_code() const BOOST_NOEXCEPT
   {
     return error_code_;
   }
 
-  const std::string& error::get_action() const noexcept
+  const std::string& error::get_action() const BOOST_NOEXCEPT
   {
     return action_;
   }
