@@ -9,6 +9,7 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
+#include <boost/numeric/conversion/cast.hpp>
 #include <casements/check.hpp>
 #include <casements/file_version_info.hpp>
 #include <casements/version_type.hpp>
@@ -26,7 +27,7 @@ namespace casements
       ( GetFileVersionInfo
         ( file_name_string.c_str()
         , NULL
-        , data.size()
+        , boost::numeric_cast<DWORD>(data.size())
         , &data[0]
         )
       , "get the file version information"

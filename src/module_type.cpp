@@ -9,6 +9,7 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
+#include <boost/numeric/conversion/cast.hpp>
 #include <cassert>
 #include <casements/check.hpp>
 #include <casements/file_version_info.hpp>
@@ -42,7 +43,7 @@ namespace casements
       ( GetModuleFileName
         ( handle()
         , const_cast<LPCH>(name.c_str())
-        , name.size()
+        , boost::numeric_cast<DWORD>(name.size())
         )
       );
     while(size == name.size())
@@ -52,7 +53,7 @@ namespace casements
         ( GetModuleFileName
           ( handle()
           , const_cast<LPCH>(name.c_str())
-          , name.size()
+          , boost::numeric_cast<DWORD>(name.size())
           )
         , "get the module file name"
        );
