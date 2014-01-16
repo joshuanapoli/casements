@@ -183,6 +183,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\roaming_application_data_path.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\src\version_type.cpp"
 				>
 			</File>
@@ -226,6 +230,10 @@
 			</File>
 			<File
 				RelativePath=".\include\casements\program_data_path.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\casements\roaming_application_data_path.hpp"
 				>
 			</File>
 			<File

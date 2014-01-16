@@ -225,6 +225,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\test\roaming_application_data_path_test.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\test\version_type_test.cpp"
 				>
 			</File>
