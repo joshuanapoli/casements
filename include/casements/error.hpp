@@ -34,10 +34,10 @@ namespace casements
     error(error_code_type error_code, const std::string& action);
 
     // Get the error_code.
-    error_code_type get_error_code() const noexcept;
+    error_code_type get_error_code() const BOOST_NOEXCEPT;
 
     // Get the action.
-    const std::string& get_action() const noexcept;
+    const std::string& get_action() const BOOST_NOEXCEPT;
 
   private:
     const error_code_type error_code_;
