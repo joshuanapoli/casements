@@ -163,6 +163,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\get_known_folder_path.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\src\last_error.cpp"
 				>
 			</File>
@@ -198,6 +202,10 @@
 			</File>
 			<File
 				RelativePath=".\include\casements\format_message_from_system.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\casements\get_known_folder_path.hpp"
 				>
 			</File>
 			<File

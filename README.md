@@ -63,6 +63,19 @@ functions. The Win32 module handle can be retrieved using the 'handle' member
 function. The returned class is convertable to a Win32 `HMODULE`.
 
 
+Known Folders
+-------------
+
+In Windows, standard folder paths are called "known folders". The
+`get_known_folder_path` function returns a known folder as a
+`boost::filesystem::path`. For example, to get the current user's "Documents"
+path:
+
+```c++
+casements::get_known_folder_path(FOLDERID_Documents);
+```
+
+
 License
 =======
 
