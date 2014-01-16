@@ -179,6 +179,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\program_data_path.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\src\version_type.cpp"
 				>
 			</File>
@@ -218,6 +222,10 @@
 			</File>
 			<File
 				RelativePath=".\include\casements\module_type.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\casements\program_data_path.hpp"
 				>
 			</File>
 			<File

@@ -75,6 +75,9 @@ path:
 casements::get_known_folder_path(FOLDERID_Documents);
 ```
 
+To get the program data path (typically "C:\Program Files\..."), use
+`casements::program_data_path()`.
+
 
 License
 =======

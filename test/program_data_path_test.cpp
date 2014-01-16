@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Unit test for getting a known folder path.
+// Test getting the system program data data path.
 //-----------------------------------------------------------------------------
 //
 // Copyright (c) 2014
@@ -10,15 +10,12 @@
 //          http://www.boost.org/LICENSE_1_0.txt)
 
 #include <boost/test/unit_test.hpp>
-#include <boost/cstdlib.hpp>
-#include <Guiddef.h>
-#include <Knownfolders.h>
-#include <casements/get_known_folder_path.hpp>
+#include <casements/program_data_path.hpp>
 
-BOOST_AUTO_TEST_CASE(should_get_program_data_folder)
+BOOST_AUTO_TEST_CASE(should_get_program_data_path)
 {
   BOOST_CHECK_EQUAL
-    ( casements::get_known_folder_path(FOLDERID_ProgramData)
+    ( casements::program_data_path()
     , boost::filesystem::path(std::getenv("ALLUSERSPROFILE"))
     );
 }
