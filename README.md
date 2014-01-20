@@ -75,10 +75,13 @@ path:
 casements::get_known_folder_path(FOLDERID_Documents);
 ```
 
-To get the program data path "C:\Program Files\...", use
-`casements::program_data_path()`. To get the roaming application data path
-"C:\Users\username\AppData\Roaming", use
-`casements::roaming_application_data_path()`.
+The following functions provide access to specific known folder paths:
+
+|Known Folder Name            |Typical Location                 |Casements function                          |
+|-----------------------------|---------------------------------|--------------------------------------------|
+|Program Data Path            |C:\Program Files\...             |`casements::program_data_path()`            |
+|Roaming Application Data Path|C:\Users\username\AppData\Roaming|`casements::roaming_application_data_path()`|
+|Documents Path               |C:\Users\username\Documents      |`casements::documents_path()`               |
 
 
 License

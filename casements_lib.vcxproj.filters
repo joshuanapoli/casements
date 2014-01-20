@@ -45,6 +45,9 @@
     <ClCompile Include="src\roaming_application_data_path.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\documents_path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\casements\check.hpp">
@@ -78,6 +81,9 @@
       <Filter>Public Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\casements\roaming_application_data_path.hpp">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\casements\documents_path.hpp">
       <Filter>Public Header Files</Filter>
     </ClInclude>
   </ItemGroup>

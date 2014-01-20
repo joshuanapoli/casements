@@ -207,6 +207,7 @@
   <ItemGroup>
     <ClCompile Include="test\casements_test.cpp" />
     <ClCompile Include="test\check_test.cpp" />
+    <ClCompile Include="test\documents_path_test.cpp" />
     <ClCompile Include="test\error_test.cpp" />
     <ClCompile Include="test\file_version_info_test.cpp" />
     <ClCompile Include="test\format_message_from_system_test.cpp" />

@@ -129,6 +129,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\documents_path.cpp" />
     <ClCompile Include="src\error.cpp" />
     <ClCompile Include="src\file_version_info.cpp" />
     <ClCompile Include="src\format_message_from_system.cpp" />
@@ -142,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\casements\check.hpp" />
+    <ClInclude Include="include\casements\documents_path.hpp" />
     <ClInclude Include="include\casements\error.hpp" />
     <ClInclude Include="include\casements\file_version_info.hpp" />
     <ClInclude Include="include\casements\format_message_from_system.hpp" />

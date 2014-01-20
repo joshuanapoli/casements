@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Implement getting the system program data path.
+// Implement getting the documents path.
 //-----------------------------------------------------------------------------
 //
 // Copyright (c) 2014
@@ -13,12 +13,12 @@
 #include <KnownFolders.h>
 
 #include <casements/get_known_folder_path.hpp>
-#include <casements/program_data_path.hpp>
+#include <casements/roaming_application_data_path.hpp>
 
 namespace casements
 {
-  boost::filesystem::path program_data_path()
+  boost::filesystem::path documents_path()
   {
-    return get_known_folder_path(FOLDERID_ProgramData);
+    return get_known_folder_path(FOLDERID_Documents);
   }
 }
