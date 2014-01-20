@@ -85,6 +85,12 @@ The following functions provide access to specific known folder paths:
 |Application Documents Path   |...\Documents\ProductName        |`casements::application_documents_path()`   |
 
 
+Hostname
+--------
+
+To get the hostname, use the function `casements::hostname()`.
+
+
 License
 =======
 
