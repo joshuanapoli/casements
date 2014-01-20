@@ -82,6 +82,7 @@ The following functions provide access to specific known folder paths:
 |Program Data Path            |C:\Program Files\...             |`casements::program_data_path()`            |
 |Roaming Application Data Path|C:\Users\username\AppData\Roaming|`casements::roaming_application_data_path()`|
 |Documents Path               |C:\Users\username\Documents      |`casements::documents_path()`               |
+|Application Documents Path   |...\Documents\ProductName        |`casements::application_documents_path()`   |
 
 
 License

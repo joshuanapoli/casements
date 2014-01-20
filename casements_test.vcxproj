@@ -205,6 +205,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="test\application_documents_path_test.cpp" />
     <ClCompile Include="test\casements_test.cpp" />
     <ClCompile Include="test\check_test.cpp" />
     <ClCompile Include="test\documents_path_test.cpp" />
