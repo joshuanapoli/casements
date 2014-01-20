@@ -132,9 +132,12 @@
     <ClCompile Include="src\error.cpp" />
     <ClCompile Include="src\file_version_info.cpp" />
     <ClCompile Include="src\format_message_from_system.cpp" />
+    <ClCompile Include="src\get_known_folder_path.cpp" />
     <ClCompile Include="src\last_error.cpp" />
     <ClCompile Include="src\module_handle.cpp" />
     <ClCompile Include="src\module_type.cpp" />
+    <ClCompile Include="src\program_data_path.cpp" />
+    <ClCompile Include="src\roaming_application_data_path.cpp" />
     <ClCompile Include="src\version_type.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -142,9 +145,12 @@
     <ClInclude Include="include\casements\error.hpp" />
     <ClInclude Include="include\casements\file_version_info.hpp" />
     <ClInclude Include="include\casements\format_message_from_system.hpp" />
+    <ClInclude Include="include\casements\get_known_folder_path.hpp" />
     <ClInclude Include="include\casements\last_error.hpp" />
     <ClInclude Include="include\casements\module_handle.hpp" />
     <ClInclude Include="include\casements\module_type.hpp" />
+    <ClInclude Include="include\casements\program_data_path.hpp" />
+    <ClInclude Include="include\casements\roaming_application_data_path.hpp" />
     <ClInclude Include="include\casements\version_type.hpp" />
   </ItemGroup>
   <ItemGroup>

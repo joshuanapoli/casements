@@ -36,6 +36,15 @@
     <ClCompile Include="src\version_type.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\get_known_folder_path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program_data_path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\roaming_application_data_path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\casements\check.hpp">
@@ -60,6 +69,15 @@
       <Filter>Public Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\casements\version_type.hpp">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\casements\get_known_folder_path.hpp">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\casements\program_data_path.hpp">
+      <Filter>Public Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\casements\roaming_application_data_path.hpp">
       <Filter>Public Header Files</Filter>
     </ClInclude>
   </ItemGroup>
