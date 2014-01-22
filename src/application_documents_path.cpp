@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Implement getting the system program data path.
+// Implement getting the application documents path.
 //-----------------------------------------------------------------------------
 //
 // Copyright (c) 2014
@@ -9,16 +9,13 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <Windows.h>
-#include <KnownFolders.h>
-
-#include <casements/get_known_folder_path.hpp>
-#include <casements/program_data_path.hpp>
+#include <casements/documents_path.hpp>
+#include <casements/module_type.hpp>
 
 namespace casements
 {
-  boost::filesystem::path program_data_path()
+  boost::filesystem::path application_documents_path()
   {
-    return get_known_folder_path(FOLDERID_ProgramData);
+    return casements::documents_path() / casements::module_type().product_name();
   }
 }

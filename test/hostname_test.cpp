@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Implement getting the system program data path.
+// Test getting the hostname of the computer.
 //-----------------------------------------------------------------------------
 //
 // Copyright (c) 2014
@@ -9,16 +9,12 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <Windows.h>
-#include <KnownFolders.h>
+#include <boost/test/unit_test.hpp>
+#include <casements/hostname.hpp>
 
-#include <casements/get_known_folder_path.hpp>
-#include <casements/program_data_path.hpp>
-
-namespace casements
+BOOST_AUTO_TEST_CASE(hostname_is_not_empty)
 {
-  boost::filesystem::path program_data_path()
-  {
-    return get_known_folder_path(FOLDERID_ProgramData);
-  }
+  std::string hostname(casements::hostname());
+  std::cout << "hostname: " << hostname << std::endl;
+  BOOST_CHECK(!hostname.empty());
 }

@@ -2,7 +2,7 @@
 #define CASEMENTS_PROGRAM_DATA_PATH_HPP
 
 //-----------------------------------------------------------------------------
-// Get the system program data data path.
+// Get the system program data path.
 //-----------------------------------------------------------------------------
 //
 // Copyright (c) 2014

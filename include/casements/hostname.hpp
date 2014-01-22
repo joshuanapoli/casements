@@ -1,5 +1,8 @@
+#ifndef CASEMENTS_HOSTNAME_HPP
+#define CASEMENTS_HOSTNAME_HPP
+
 //-----------------------------------------------------------------------------
-// Implement getting the system program data path.
+// Get the hostname of the computer.
 //-----------------------------------------------------------------------------
 //
 // Copyright (c) 2014
@@ -9,16 +12,11 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <Windows.h>
-#include <KnownFolders.h>
-
-#include <casements/get_known_folder_path.hpp>
-#include <casements/program_data_path.hpp>
+#include <string>
 
 namespace casements
 {
-  boost::filesystem::path program_data_path()
-  {
-    return get_known_folder_path(FOLDERID_ProgramData);
-  }
+    std::string hostname();
 }
+
+#endif

@@ -121,7 +121,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>include;..\..\..\..\boost\include\boost-1_54;..\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -183,7 +183,7 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>include;..\..\..\..\boost\include\boost-1_54;..\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>
@@ -205,14 +205,20 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="test\application_documents_path_test.cpp" />
     <ClCompile Include="test\casements_test.cpp" />
     <ClCompile Include="test\check_test.cpp" />
+    <ClCompile Include="test\documents_path_test.cpp" />
+    <ClCompile Include="test\hostname_test.cpp" />
     <ClCompile Include="test\error_test.cpp" />
     <ClCompile Include="test\file_version_info_test.cpp" />
     <ClCompile Include="test\format_message_from_system_test.cpp" />
+    <ClCompile Include="test\get_known_folder_path_test.cpp" />
     <ClCompile Include="test\last_error_test.cpp" />
     <ClCompile Include="test\module_handle_test.cpp" />
     <ClCompile Include="test\module_type_test.cpp" />
+    <ClCompile Include="test\program_data_path_test.cpp" />
+    <ClCompile Include="test\roaming_application_data_path_test.cpp" />
     <ClCompile Include="test\version_type_test.cpp" />
   </ItemGroup>
   <ItemGroup>

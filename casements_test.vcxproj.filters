@@ -42,6 +42,22 @@
     <ClCompile Include="test\version_type_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test\get_known_folder_path_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\program_data_path_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\roaming_application_data_path_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\documents_path_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\application_documents_path_test.cpp">
+    <ClCompile Include="test\hostname_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

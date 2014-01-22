@@ -80,6 +80,21 @@ To get the program data path "C:\Program Files\...", use
 "C:\Users\username\AppData\Roaming", use
 `casements::roaming_application_data_path()`.
 
+The following functions provide access to specific known folder paths:
+
+|Known Folder Name            |Typical Location                 |Casements function                          |
+|-----------------------------|---------------------------------|--------------------------------------------|
+|Program Data Path            |C:\Program Files\...             |`casements::program_data_path()`            |
+|Roaming Application Data Path|C:\Users\username\AppData\Roaming|`casements::roaming_application_data_path()`|
+|Documents Path               |C:\Users\username\Documents      |`casements::documents_path()`               |
+|Application Documents Path   |...\Documents\ProductName        |`casements::application_documents_path()`   |
+
+
+Hostname
+--------
+
+To get the hostname, use the function `casements::hostname()`.
+
 
 License
 =======
