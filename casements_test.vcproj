@@ -185,11 +185,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\test\application_documents_path_test.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\test\casements_test.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\test\check_test.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\test\documents_path_test.cpp"
 				>
 			</File>
 			<File
@@ -206,6 +214,10 @@
 			</File>
 			<File
 				RelativePath=".\test\get_known_folder_path_test.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\test\hostname_test.cpp"
 				>
 			</File>
 			<File

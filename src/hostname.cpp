@@ -20,7 +20,7 @@ namespace casements
     DWORD size(0);
     (void)GetComputerNameEx
         ( ComputerNamePhysicalDnsHostname
-        , nullptr
+        , 0
         , &size
         );
     std::string result(size, '\0');
@@ -32,7 +32,11 @@ namespace casements
         )
       , "get the computer name"
       );
-    result.pop_back(); // drop a trailing NUL character
+    // drop a trailing NUL character
+    if(!result.empty())
+    {
+      result.erase(result.size() - 1);
+    }
     return result;
   }
 }
