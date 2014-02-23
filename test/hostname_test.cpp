@@ -11,6 +11,7 @@
 
 #include <boost/test/unit_test.hpp>
 #include <casements/hostname.hpp>
+#include <iostream>
 
 BOOST_AUTO_TEST_CASE(hostname_is_not_empty)
 {
